@@ -38,7 +38,7 @@ const Home = () => {
   );
 
   const handleCreateNewVotingClick = () => {
-    setModalOpen(true); // Open the modal when the button is clicked
+    setModalOpen(true);
   };
 
   const handleVote = async (candidateIndex) => {
@@ -48,14 +48,6 @@ const Home = () => {
       throw error;
     }
   };
-
-  console.log(
-    "currentVotingDetails",
-    // currentVotingId,
-    // currentVotingDetails,
-    // currentVoteInfo,
-    userVoted
-  );
 
   return (
     <main>
